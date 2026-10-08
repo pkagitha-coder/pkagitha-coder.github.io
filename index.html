@@ -1,0 +1,1364 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pradeep Kagithalagudem | Enterprise Software Architect & AI Systems Engineer</title>
+  <meta name="description" content="Portfolio of Pradeep Kagithalagudem - Enterprise Software Architect & Senior Software Engineer with 15+ years experience in distributed systems, Java microservices, and AI engineering (Spring AI, Local LLMs, Vector DBs).">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%236366f1'/><text x='50' y='65' font-family='sans-serif' font-size='48' font-weight='bold' fill='white' text-anchor='middle'>PK</text></svg>">
+
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: ['class', '[data-theme="dark"]'],
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          },
+          colors: {
+            brand: {
+              50: '#eef2ff',
+              100: '#e0e7ff',
+              400: '#818cf8',
+              500: '#6366f1',
+              600: '#4f46e5',
+              700: '#4338ca',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="relative min-h-screen bg-grid-pattern selection:bg-indigo-500 selection:text-white">
+
+  <!-- Ambient Ambient Lighting -->
+  <div class="ambient-glow-1"></div>
+  <div class="ambient-glow-2"></div>
+  <div class="ambient-glow-3"></div>
+
+  <!-- Navigation Bar -->
+  <header class="sticky top-0 z-50 backdrop-blur-md bg-opacity-80 border-b border-slate-800/80 transition-colors">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 sm:h-20">
+        
+        <!-- Logo / Brand -->
+        <a href="#hero" class="flex items-center space-x-3 group">
+          <div class="avatar-ring flex items-center justify-center w-10 h-10 shadow-lg shadow-indigo-500/20">
+            <span class="w-full h-full bg-slate-900 rounded-full flex items-center justify-center font-mono font-bold text-white text-sm group-hover:scale-105 transition-transform">
+              PK
+            </span>
+          </div>
+          <div>
+            <span class="font-bold text-base sm:text-lg tracking-tight block leading-tight text-white group-hover:text-indigo-400 transition-colors">
+              Pradeep Kagithalagudem
+            </span>
+            <span class="text-[11px] text-slate-400 font-mono tracking-wider block">
+              ENTERPRISE ARCHITECT & AI ENGINEER
+            </span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden md:flex items-center space-x-1 lg:space-x-2 text-sm font-medium text-slate-300">
+          <a href="#about" class="nav-link px-3 py-2 rounded-lg hover:text-white hover:bg-slate-800/50 transition-colors">About</a>
+          <a href="#projects" class="nav-link px-3 py-2 rounded-lg hover:text-white hover:bg-slate-800/50 transition-colors">Projects</a>
+          <a href="#experience" class="nav-link px-3 py-2 rounded-lg hover:text-white hover:bg-slate-800/50 transition-colors">Experience</a>
+          <a href="#skills" class="nav-link px-3 py-2 rounded-lg hover:text-white hover:bg-slate-800/50 transition-colors">Skills</a>
+          <a href="#terminal-sec" class="nav-link px-3 py-2 rounded-lg hover:text-white hover:bg-slate-800/50 transition-colors flex items-center space-x-1.5">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            <span>CLI</span>
+          </a>
+          <a href="#contact" class="nav-link px-3 py-2 rounded-lg hover:text-white hover:bg-slate-800/50 transition-colors">Contact</a>
+        </nav>
+
+        <!-- Right Side: Resume CTA & Theme Switcher -->
+        <div class="flex items-center space-x-3">
+          <!-- Theme Toggle -->
+          <button id="theme-toggle" aria-label="Toggle Dark/Light Mode" class="p-2.5 rounded-xl border border-slate-700/60 bg-slate-800/60 hover:bg-slate-700/60 text-slate-300 hover:text-white transition-all shadow-sm">
+            <span id="theme-icon">
+              <!-- Default dark mode shows sun icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+              </svg>
+            </span>
+          </button>
+
+          <!-- Download Resume Button -->
+          <a href="pradeep_kagithalagudem_resume.pdf" download="Pradeep_Kagithalagudem_Resume.pdf" class="hidden sm:inline-flex items-center space-x-2 px-4 py-2 rounded-xl bg-gradient-to-r from-indigo-600 to-indigo-700 hover:from-indigo-500 hover:to-indigo-600 text-white font-medium text-xs shadow-md shadow-indigo-500/25 transition-all hover:scale-[1.02]">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+            </svg>
+            <span>Resume (PDF)</span>
+          </a>
+
+          <!-- Mobile Hamburger -->
+          <button id="mobile-menu-btn" aria-label="Toggle Mobile Menu" class="md:hidden p-2.5 rounded-xl border border-slate-700 bg-slate-800 text-slate-300 hover:text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobile-menu" class="hidden md:hidden border-b border-slate-800 bg-slate-900/95 px-4 pt-2 pb-6 space-y-2">
+      <a href="#about" class="mobile-nav-link block px-3 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800">About</a>
+      <a href="#projects" class="mobile-nav-link block px-3 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800">Projects</a>
+      <a href="#experience" class="mobile-nav-link block px-3 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800">Experience</a>
+      <a href="#skills" class="mobile-nav-link block px-3 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800">Skills</a>
+      <a href="#terminal-sec" class="mobile-nav-link block px-3 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800">CLI Terminal</a>
+      <a href="#contact" class="mobile-nav-link block px-3 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800">Contact</a>
+      <div class="pt-2">
+        <a href="pradeep_kagithalagudem_resume.pdf" download class="block text-center w-full px-4 py-2.5 rounded-xl bg-indigo-600 text-white font-medium text-sm">
+          Download Resume (PDF)
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="relative pt-12 sm:pt-20 pb-16 sm:pb-24 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Hero Text (8 cols) -->
+        <div class="lg:col-span-8 space-y-6">
+          
+          <!-- Availability / Role Badge -->
+          <div class="inline-flex items-center space-x-2.5 px-3.5 py-1.5 rounded-full border border-emerald-500/30 bg-emerald-500/10 text-emerald-400 text-xs font-semibold tracking-wide status-pill">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+            <span>Senior Software Engineer & Enterprise Architect • Open to Technical Leadership Roles</span>
+          </div>
+
+          <!-- Headline -->
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight">
+            Architecting <span class="gradient-text-primary">Distributed Systems</span> & <span class="gradient-text-emerald">Agentic AI</span>
+          </h1>
+
+          <!-- Subheadline -->
+          <p class="text-lg sm:text-xl text-slate-300 leading-relaxed max-w-3xl font-light">
+            I am <strong class="text-white font-semibold">Pradeep Kagithalagudem</strong>, an Enterprise Software Architect with <span class="text-indigo-400 font-semibold">15+ years</span> designing resilient, zero-support-overhead distributed architectures, high-concurrency Java microservices, and practical LLM/Agentic AI systems.
+          </p>
+
+          <p class="text-sm sm:text-base text-slate-400 leading-relaxed max-w-2xl">
+            Formerly at <span class="text-slate-200 font-medium">Apple</span> and <span class="text-slate-200 font-medium">Progress Software</span>, delivering mission-critical enterprise frameworks, high-throughput database drivers, and vector-powered AI intelligence.
+          </p>
+
+          <!-- Action Buttons -->
+          <div class="flex flex-wrap items-center gap-4 pt-2">
+            <a href="#projects" class="px-6 py-3.5 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-sm shadow-lg shadow-indigo-600/30 transition-all hover:scale-[1.02] flex items-center space-x-2">
+              <span>View Featured Projects</span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </a>
+
+            <a href="pradeep_kagithalagudem_resume.pdf" download="Pradeep_Kagithalagudem_Resume.pdf" class="px-6 py-3.5 rounded-xl border border-slate-700 bg-slate-800/80 hover:bg-slate-700/80 text-white font-semibold text-sm transition-all hover:scale-[1.02] flex items-center space-x-2 shadow-sm">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+              </svg>
+              <span>Download CV (PDF)</span>
+            </a>
+
+            <a href="https://github.com/pkagitha-coder" target="_blank" rel="noopener noreferrer" class="p-3.5 rounded-xl border border-slate-700 bg-slate-800/80 hover:bg-slate-700/80 text-slate-300 hover:text-white transition-all shadow-sm" title="GitHub: pkagitha-coder">
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+              </svg>
+            </a>
+
+            <a href="https://linkedin.com/in/pradeep-kagithalagudem" target="_blank" rel="noopener noreferrer" class="p-3.5 rounded-xl border border-slate-700 bg-slate-800/80 hover:bg-slate-700/80 text-slate-300 hover:text-white transition-all shadow-sm" title="LinkedIn: Pradeep Kagithalagudem">
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Right Hero Profile & Live Terminal Teaser (4 cols) -->
+        <div class="lg:col-span-4 flex flex-col items-center">
+          <div class="relative group">
+            <!-- Glowing gradient ring -->
+            <div class="absolute -inset-1 rounded-full bg-gradient-to-r from-indigo-500 via-emerald-400 to-cyan-400 opacity-60 blur-lg group-hover:opacity-100 transition duration-500"></div>
+            
+            <div class="relative w-44 h-44 sm:w-52 sm:h-52 rounded-full overflow-hidden border-4 border-slate-900 bg-slate-800 shadow-2xl">
+              <img src="assets/avatar.jpg" alt="Pradeep Kagithalagudem" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://avatars.githubusercontent.com/u/10632693?v=4'">
+            </div>
+
+            <!-- Floating verification badge -->
+            <div class="absolute bottom-1 right-2 bg-slate-900 border border-slate-700 text-xs px-3 py-1 rounded-full flex items-center space-x-1.5 shadow-lg">
+              <span class="w-2 h-2 rounded-full bg-indigo-400"></span>
+              <span class="text-slate-200 font-mono text-[11px]">Hyderabad, IN</span>
+            </div>
+          </div>
+
+          <!-- Quick Terminal trigger card -->
+          <div class="w-full mt-8 glass-panel rounded-2xl p-4 border border-slate-800">
+            <div class="flex items-center justify-between text-xs text-slate-400 mb-2 font-mono">
+              <div class="flex items-center space-x-1.5">
+                <span class="w-2.5 h-2.5 rounded-full bg-red-500/80"></span>
+                <span class="w-2.5 h-2.5 rounded-full bg-amber-500/80"></span>
+                <span class="w-2.5 h-2.5 rounded-full bg-emerald-500/80"></span>
+                <span class="ml-1 text-[11px] text-slate-400">pradeep@portfolio</span>
+              </div>
+              <span class="text-emerald-400">zsh</span>
+            </div>
+            <div class="font-mono text-xs text-slate-300 space-y-1">
+              <div><span class="text-indigo-400 font-bold">$</span> pradeep --role</div>
+              <div class="text-emerald-400">"Enterprise Architect & AI Systems Engineer"</div>
+              <div><span class="text-indigo-400 font-bold">$</span> pradeep --years</div>
+              <div class="text-cyan-300">15+ Years (Apple, Progress, Enterprise)</div>
+            </div>
+            <a href="#terminal-sec" class="mt-3 block text-center py-1.5 rounded-lg bg-slate-800/80 hover:bg-slate-700 text-[11px] font-mono text-indigo-300 hover:text-indigo-200 transition-colors">
+              → Launch Interactive CLI Terminal
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- High-Impact Metrics Grid -->
+      <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
+        
+        <div class="glass-panel p-5 sm:p-6 rounded-2xl">
+          <div class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight flex items-baseline">
+            <span>15</span><span class="text-indigo-500">+</span>
+          </div>
+          <div class="text-sm font-semibold text-slate-200 mt-1">Years Experience</div>
+          <div class="text-xs text-slate-400 mt-1">Distributed systems, Java microservices & AI</div>
+        </div>
+
+        <div class="glass-panel p-5 sm:p-6 rounded-2xl">
+          <div class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight flex items-baseline">
+            <span>40</span><span class="text-emerald-400">%</span>
+          </div>
+          <div class="text-sm font-semibold text-slate-200 mt-1">Dev Time Saved</div>
+          <div class="text-xs text-slate-400 mt-1">Architected reusable enterprise framework at Apple</div>
+        </div>
+
+        <div class="glass-panel p-5 sm:p-6 rounded-2xl">
+          <div class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight flex items-baseline">
+            <span>5</span><span class="text-cyan-400"> Major</span>
+          </div>
+          <div class="text-sm font-semibold text-slate-200 mt-1">Releases Owned</div>
+          <div class="text-xs text-slate-400 mt-1">Commercial Hybrid Data Pipeline & JDBC Drivers</div>
+        </div>
+
+        <div class="glass-panel p-5 sm:p-6 rounded-2xl">
+          <div class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight flex items-baseline">
+            <span>&lt; 5</span><span class="text-indigo-400">ms</span>
+          </div>
+          <div class="text-sm font-semibold text-slate-200 mt-1">SLA Latency</div>
+          <div class="text-xs text-slate-400 mt-1">3-Tier enterprise IP whitelist security overhead</div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Architectural Philosophy & Core Pillars -->
+  <section id="about" class="py-16 sm:py-20 border-t border-slate-800/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <div class="inline-flex items-center space-x-2 text-indigo-400 text-xs font-mono tracking-widest uppercase mb-2">
+          <span>// ARCHITECTURAL PHILOSOPHY</span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+          Engineering for Scale, Reliability & Velocity
+        </h2>
+        <p class="mt-3 text-base text-slate-400">
+          I build platforms where bulletproof software engineering meets autonomous AI innovation—designing systems that run with zero support overhead and clear business ROI.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Pillar 1 -->
+        <div class="glass-panel p-6 rounded-2xl space-y-3">
+          <div class="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+          </div>
+          <h3 class="text-lg font-bold text-white">Zero-Overhead Reliability</h3>
+          <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">
+            Translating complex business requirements into robust, fault-tolerant architectures. Tuning concurrency, memory footprints, and GEO-partitioning to reliably deliver sub-5ms SLAs.
+          </p>
+        </div>
+
+        <!-- Pillar 2 -->
+        <div class="glass-panel p-6 rounded-2xl space-y-3">
+          <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+            </svg>
+          </div>
+          <h3 class="text-lg font-bold text-white">Framework-First Velocity</h3>
+          <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">
+            Designing reusable enterprise application frameworks that eliminate duplicated effort, standardizing best practices, and slashing ongoing feature development cycles by 40%.
+          </p>
+        </div>
+
+        <!-- Pillar 3 -->
+        <div class="glass-panel p-6 rounded-2xl space-y-3">
+          <div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+          </div>
+          <h3 class="text-lg font-bold text-white">Autonomous AI Systems</h3>
+          <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">
+            Harnessing local LLMs (Ollama, Qwen, Llama), Qdrant vector databases, Spring AI, and Model Context Protocol (MCP) to solve real enterprise bottlenecks with 100% data privacy.
+          </p>
+        </div>
+
+        <!-- Pillar 4 -->
+        <div class="glass-panel p-6 rounded-2xl space-y-3">
+          <div class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+            </svg>
+          </div>
+          <h3 class="text-lg font-bold text-white">Multi-Tier Security & RBAC</h3>
+          <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">
+            Architecting 3-tier IP whitelisting, granular role-based access control (RBAC), and enterprise governance frameworks from scratch without compromising API response speed.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Interactive Terminal Simulator Section -->
+  <section id="terminal-sec" class="py-16 sm:py-20 border-t border-slate-800/80 bg-slate-950/40">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-8 gap-4">
+        <div>
+          <div class="inline-flex items-center space-x-2 text-emerald-400 text-xs font-mono tracking-widest uppercase mb-2">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            <span>// INTERACTIVE DEVELOPER CONSOLE</span>
+          </div>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+            Explore via Terminal (CLI)
+          </h2>
+          <p class="text-sm text-slate-400 mt-1">
+            Type commands or click the shortcut chips below to query skills, experience, and download my resume.
+          </p>
+        </div>
+
+        <!-- Quick Chips -->
+        <div class="flex flex-wrap gap-2">
+          <button data-cmd="skills" class="terminal-chip px-2.5 py-1 text-xs font-mono rounded-lg bg-slate-800 hover:bg-slate-700 text-indigo-300 border border-slate-700 transition-colors">
+            skills
+          </button>
+          <button data-cmd="projects" class="terminal-chip px-2.5 py-1 text-xs font-mono rounded-lg bg-slate-800 hover:bg-slate-700 text-emerald-300 border border-slate-700 transition-colors">
+            projects
+          </button>
+          <button data-cmd="experience" class="terminal-chip px-2.5 py-1 text-xs font-mono rounded-lg bg-slate-800 hover:bg-slate-700 text-cyan-300 border border-slate-700 transition-colors">
+            experience
+          </button>
+          <button data-cmd="achievements" class="terminal-chip px-2.5 py-1 text-xs font-mono rounded-lg bg-slate-800 hover:bg-slate-700 text-purple-300 border border-slate-700 transition-colors">
+            achievements
+          </button>
+          <button data-cmd="sudo hire" class="terminal-chip px-2.5 py-1 text-xs font-mono rounded-lg bg-emerald-950/60 hover:bg-emerald-900/60 text-emerald-300 border border-emerald-700/50 transition-colors font-bold">
+            sudo hire
+          </button>
+        </div>
+      </div>
+
+      <!-- Terminal Window -->
+      <div class="terminal-window overflow-hidden">
+        <!-- Terminal Title Bar -->
+        <div class="terminal-header px-4 py-3 flex items-center justify-between">
+          <div class="flex items-center space-x-2">
+            <span class="w-3 h-3 rounded-full bg-rose-500/90 inline-block"></span>
+            <span class="w-3 h-3 rounded-full bg-amber-500/90 inline-block"></span>
+            <span class="w-3 h-3 rounded-full bg-emerald-500/90 inline-block"></span>
+            <span class="ml-2 text-xs font-mono text-slate-400">pradeep@macbook-pro: ~/portfolio (zsh)</span>
+          </div>
+          <div class="text-[11px] font-mono text-slate-500 hidden sm:block">
+            Press [Enter] to run, [↑/↓] for history
+          </div>
+        </div>
+
+        <!-- Terminal Output & Interactive Prompt Area -->
+        <div id="terminal-content" class="terminal-scroll p-4 sm:p-6 space-y-3 font-mono text-xs sm:text-sm">
+          <div class="text-slate-400 leading-relaxed">
+            Welcome to <span class="text-white font-bold">Pradeep Kagithalagudem</span>'s interactive portfolio console.<br/>
+            Type <span class="text-emerald-400 font-bold">help</span> to view all commands, or click any suggestion chip above.
+          </div>
+
+          <div id="terminal-output" class="space-y-2"></div>
+
+          <!-- Input Row -->
+          <div class="flex items-center space-x-2 pt-2">
+            <span class="text-emerald-400 font-bold whitespace-nowrap">pradeep@macbook:~$</span>
+            <input type="text" id="terminal-input" autocomplete="off" spellcheck="false" class="w-full bg-transparent text-white font-mono text-xs sm:text-sm focus:outline-none placeholder:text-slate-600" placeholder="type 'help', 'skills', 'projects', 'sudo hire'...">
+            <span class="cursor-blink"></span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Featured Engineering Projects Section -->
+  <section id="projects" class="py-16 sm:py-24 border-t border-slate-800/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+        <div>
+          <div class="inline-flex items-center space-x-2 text-indigo-400 text-xs font-mono tracking-widest uppercase mb-2">
+            <span>// PORTFOLIO SHOWCASE</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+            Featured Engineering Projects
+          </h2>
+          <p class="mt-2 text-slate-400 max-w-2xl text-sm sm:text-base">
+            Architected enterprise frameworks, AI pipelines, financial modeling engines, and high-performance microservices. Click "Deep Dive" for complete system architecture.
+          </p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="flex flex-wrap gap-2 p-1.5 rounded-xl bg-slate-900/90 border border-slate-800">
+          <button data-filter="all" class="filter-btn active px-3.5 py-1.5 text-xs font-semibold rounded-lg text-slate-300 hover:text-white">All Projects</button>
+          <button data-filter="ai" class="filter-btn px-3.5 py-1.5 text-xs font-semibold rounded-lg text-slate-300 hover:text-white">AI & LLMs</button>
+          <button data-filter="java" class="filter-btn px-3.5 py-1.5 text-xs font-semibold rounded-lg text-slate-300 hover:text-white">Distributed & Java</button>
+          <button data-filter="fintech" class="filter-btn px-3.5 py-1.5 text-xs font-semibold rounded-lg text-slate-300 hover:text-white">FinTech & Tooling</button>
+        </div>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+        
+        <!-- Project 1: JobResumeMatcher -->
+        <div class="project-card glass-panel rounded-2xl p-6 flex flex-col justify-between" data-category="ai">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="px-2.5 py-1 text-[11px] font-mono rounded-md bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 font-semibold">
+                AI & Local LLMs
+              </span>
+              <span class="text-xs text-emerald-400 font-mono flex items-center space-x-1">
+                <span>●</span>
+                <span>Production Pipeline</span>
+              </span>
+            </div>
+            
+            <h3 class="text-xl font-bold text-white tracking-tight group-hover:text-indigo-400">
+              AI Job Resume Matcher & Pipeline
+            </h3>
+            
+            <p class="mt-3 text-sm text-slate-400 leading-relaxed">
+              Automated, privacy-first job discovery and candidate-fit pipeline. Uses local Ollama LLMs (Qwen 2.5 Coder 14B) to score resume fit against LinkedIn & Glassdoor postings with zero cloud API costs. Features an interactive dashboard with click-to-apply state tracking.
+            </p>
+
+            <div class="mt-4 flex flex-wrap gap-1.5">
+              <span class="px-2 py-0.5 text-[11px] font-mono rounded bg-slate-800 text-slate-300">Python 3.13</span>
+              <span class="px-2 py-0.5 text-[11px] font-mono rounded bg-slate-800 text-indigo-300">Ollama LLM</span>
+              <span class="px-2 py-0.5 text-[11px] font-mono rounded bg-slate-800 text-slate-300">Qwen 2.5 Coder</span>
+              <span class="px-2 py-0.5 text-[11px] font-mono rounded bg-slate-800 text-slate-300">JobSpy</span>
+              <span class="px-2 py-0.5 text-[11px] font-mono rounded bg-slate-800 text-slate-300">HTML5 Dashboard</span>
+            </div>
+          </div>
+
+          <div class="mt-6 pt-4 border-t border-slate-800/80 flex items-center justify-between">
+            <button class="open-deep-dive text-xs font-semibold text-indigo-400 hover:text-indigo-300 flex items-center space-x-1" data-project="jobresumematcher">
+              <span>Deep Dive Architecture</span>
+              <span>→</span>
+            </button>
+            <a href="https://github.com/pkagitha-coder/JobResumeMatcher" target="_blank" class="text-xs font-mono text-slate-400 hover:text-white flex items-center space-x-1">
+              <span>GitHub</span>
+              <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 2: SWP Bucket Strategy -->
+        <div class="project-card glass-panel rounded-2xl p-6 flex flex-col justify-between" data-category="java fintech">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="px-2.5 py-1 text-[11px] font-mono rounded-md bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 font-semibold">
+                FinTech & Spring Boot
+              </span>
+              <span class="text-xs text-slate-400 font-mono">Financial Engine</span>
+            </div>
+            
+            <h3 class="text-xl font-bold text-white tracking-tight group-hover:text-indigo-400">
+              SWP Multi-Bucket Retirement Engine
+            </h3>
+            
+            <p class="mt-3 text-sm text-slate-400 leading-relaxed">
+              Sophisticated Systematic Withdrawal Plan (SWP) financial modeling application in Spring Boot. Models 3-bucket corpus architecture (Main, Backup, Growth) with cyclic replenishment, interest compounding, and dynamic annual step-up inflation rates.
+            </p>
+
+            <div class="mt-4 flex flex-wrap gap-1.5">
+              <span class="px-2 py-0.5 text-[11px] font-mono rounded bg-slate-800 text-emerald-300">Java 17</span>
+              <span class="px-2 py-0.5 text-[11px] font-mono rounded bg-slate-800 text-slate-300">Spring Boot</span>
+              <span class="px-2 py-0.5 text-[11px] font-mono rounded bg-slate-800 text-slate-300">Corpus Modeling</span>
+              <span class="px-2 py-0.5 text-[11px] font-mono rounded bg-slate-800 text-slate-300">JUnit 5</span>
+              <span class="px-2 py-0.5 text-[11px] font-mono rounded bg-slate-800 text-slate-300">Maven</span>
+            </div>
+          </div>
+
+          <div class="mt-6 pt-4 border-t border-slate-800/80 flex items-center justify-between">
+            <button class="open-deep-dive text-xs font-semibold text-indigo-400 hover:text-indigo-300 flex items-center space-x-1" data-project="swpbucket">
+              <span>Deep Dive Architecture</span>
+              <span>→</span>
+            </button>
+            <a href="https://github.com/pkagitha-coder/swp-bucket-strategy" target="_blank" class="text-xs font-mono text-slate-400 hover:text-white flex items-center space-x-1">
+              <span>GitHub</span>
+              <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 3: Spring AI & Enterprise RAG -->
+        <div class="project-card glass-panel rounded-2xl p-6 flex flex-col justify-between" data-category="ai java">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="px-2.5 py-1 text-[11px] font-mono rounded-md bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 font-semibold">
+                Spring AI & RAG
+              </span>
+              <span class="text-xs text-indigo-400 font-mono">Agentic Architecture</span>
+            </div>
+            
+            <h3 class="text-xl font-bold text-white tracking-tight group-hover:text-indigo-400">
+              Spring AI & Enterprise RAG Platform
+            </h3>
+            
+            <p class="mt-3 text-sm text-slate-400 leading-relaxed">
+              Production implementation of enterprise generative AI using Spring AI, Ollama Llama-3, pgvector, and Qdrant. Features Model Context Protocol (MCP), streaming SSE chat, HR policy ingestion, and autonomous function calling.
+            </p>
+
+            <div class="mt-4 flex flex-wrap gap-1.5">
+              <span class="px-2 py-0.5 text-[11px] font-mono rounded bg-slate-800 text-cyan-300">Spring AI</span>
+              <span class="px-2 py-0.5 text-[11px] font-mono rounded bg-slate-800 text-slate-300">Java 21</span>
+              <span class="px-2 py-0.5 text-[11px] font-mono rounded bg-slate-800 text-slate-300">pgvector</span>
+              <span class="px-2 py-0.5 text-[11px] font-mono rounded bg-slate-800 text-slate-300">Qdrant</span>
+              <span class="px-2 py-0.5 text-[11px] font-mono rounded bg-slate-800 text-slate-300">MCP Protocol</span>
+            </div>
+          </div>
+
+          <div class="mt-6 pt-4 border-t border-slate-800/80 flex items-center justify-between">
+            <button class="open-deep-dive text-xs font-semibold text-indigo-400 hover:text-indigo-300 flex items-center space-x-1" data-project="springaiplatform">
+              <span>Deep Dive Architecture</span>
+              <span>→</span>
+            </button>
+            <a href="https://github.com/pkagitha-coder" target="_blank" class="text-xs font-mono text-slate-400 hover:text-white flex items-center space-x-1">
+              <span>GitHub</span>
+              <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 4: Apple Enterprise Planning Framework -->
+        <div class="project-card glass-panel rounded-2xl p-6 flex flex-col justify-between" data-category="java">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="px-2.5 py-1 text-[11px] font-mono rounded-md bg-purple-500/10 text-purple-400 border border-purple-500/20 font-semibold">
+                Apple • Architecture
+              </span>
+              <span class="text-xs text-amber-400 font-mono font-bold">-40% Dev Time</span>
+            </div>
+            
+            <h3 class="text-xl font-bold text-white tracking-tight group-hover:text-indigo-400">
+              Enterprise Planning Framework
+            </h3>
+            
+            <p class="mt-3 text-sm text-slate-400 leading-relaxed">
+              Architected a reusable enterprise framework for critical Planning Applications powering mission-critical operations at Apple. Engineered GEO-partitioned workflows and tuned Java microservices concurrency to unblock strict SLAs for APEX.
+            </p>
+
+            <div class="mt-4 flex flex-wrap gap-1.5">
+              <span class="px-2 py-0.5 text-[11px] font-mono rounded bg-slate-800 text-purple-300">Java Microservices</span>
+              <span class="px-2 py-0.5 text-[11px] font-mono rounded bg-slate-800 text-slate-300">GEO Partitioning</span>
+              <span class="px-2 py-0.5 text-[11px] font-mono rounded bg-slate-800 text-slate-300">Concurrency Tuning</span>
+              <span class="px-2 py-0.5 text-[11px] font-mono rounded bg-slate-800 text-slate-300">APEX SLAs</span>
+            </div>
+          </div>
+
+          <div class="mt-6 pt-4 border-t border-slate-800/80 flex items-center justify-between">
+            <button class="open-deep-dive text-xs font-semibold text-indigo-400 hover:text-indigo-300 flex items-center space-x-1" data-project="appleframework">
+              <span>Deep Dive Architecture</span>
+              <span>→</span>
+            </button>
+            <span class="text-xs text-slate-500 font-mono">Enterprise Apple</span>
+          </div>
+        </div>
+
+        <!-- Project 5: Apple Semantic QA Search -->
+        <div class="project-card glass-panel rounded-2xl p-6 flex flex-col justify-between" data-category="ai">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="px-2.5 py-1 text-[11px] font-mono rounded-md bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 font-semibold">
+                Apple • AI Systems
+              </span>
+              <span class="text-xs text-emerald-400 font-mono">Vector Search</span>
+            </div>
+            
+            <h3 class="text-xl font-bold text-white tracking-tight group-hover:text-indigo-400">
+              AI Semantic QA Search & Deduplication
+            </h3>
+            
+            <p class="mt-3 text-sm text-slate-400 leading-relaxed">
+              Built an AI-powered semantic search and deduplication service for enterprise QA test case management at Apple. Leverages Qdrant vector database and cosine similarity to index test suites, instantly identifying redundancies and saving hundreds of engineering hours.
+            </p>
+
+            <div class="mt-4 flex flex-wrap gap-1.5">
+              <span class="px-2 py-0.5 text-[11px] font-mono rounded bg-slate-800 text-indigo-300">Qdrant Vector DB</span>
+              <span class="px-2 py-0.5 text-[11px] font-mono rounded bg-slate-800 text-slate-300">Cosine Similarity</span>
+              <span class="px-2 py-0.5 text-[11px] font-mono rounded bg-slate-800 text-slate-300">Python / Java</span>
+              <span class="px-2 py-0.5 text-[11px] font-mono rounded bg-slate-800 text-slate-300">Embeddings</span>
+            </div>
+          </div>
+
+          <div class="mt-6 pt-4 border-t border-slate-800/80 flex items-center justify-between">
+            <button class="open-deep-dive text-xs font-semibold text-indigo-400 hover:text-indigo-300 flex items-center space-x-1" data-project="applesemanticsearch">
+              <span>Deep Dive Architecture</span>
+              <span>→</span>
+            </button>
+            <span class="text-xs text-slate-500 font-mono">Enterprise Apple</span>
+          </div>
+        </div>
+
+        <!-- Project 6: ANTLR DSL Compiler -->
+        <div class="project-card glass-panel rounded-2xl p-6 flex flex-col justify-between" data-category="fintech java">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="px-2.5 py-1 text-[11px] font-mono rounded-md bg-amber-500/10 text-amber-400 border border-amber-500/20 font-semibold">
+                Compiler & AST
+              </span>
+              <span class="text-xs text-cyan-400 font-mono">Weeks → Minutes</span>
+            </div>
+            
+            <h3 class="text-xl font-bold text-white tracking-tight group-hover:text-indigo-400">
+              ANTLR DSL Task-Chain Compiler
+            </h3>
+            
+            <p class="mt-3 text-sm text-slate-400 leading-relaxed">
+              Custom domain-specific language parser and CLI tooling (TDM CLI) built with ANTLR. Translates SQL-like declarative English statements into automated task-chain metadata updates, reducing a multi-week error-prone manual chore to minutes.
+            </p>
+
+            <div class="mt-4 flex flex-wrap gap-1.5">
+              <span class="px-2 py-0.5 text-[11px] font-mono rounded bg-slate-800 text-amber-300">Java</span>
+              <span class="px-2 py-0.5 text-[11px] font-mono rounded bg-slate-800 text-slate-300">ANTLR 4</span>
+              <span class="px-2 py-0.5 text-[11px] font-mono rounded bg-slate-800 text-slate-300">AST Parsing</span>
+              <span class="px-2 py-0.5 text-[11px] font-mono rounded bg-slate-800 text-slate-300">CLI Automation</span>
+            </div>
+          </div>
+
+          <div class="mt-6 pt-4 border-t border-slate-800/80 flex items-center justify-between">
+            <button class="open-deep-dive text-xs font-semibold text-indigo-400 hover:text-indigo-300 flex items-center space-x-1" data-project="antlrdsl">
+              <span>Deep Dive Architecture</span>
+              <span>→</span>
+            </button>
+            <span class="text-xs text-slate-500 font-mono">Tooling Innovation</span>
+          </div>
+        </div>
+
+        <!-- Project 7: Progress Hybrid Data Pipeline -->
+        <div class="project-card glass-panel rounded-2xl p-6 flex flex-col justify-between" data-category="java">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="px-2.5 py-1 text-[11px] font-mono rounded-md bg-blue-500/10 text-blue-400 border border-blue-500/20 font-semibold">
+                Progress Software
+              </span>
+              <span class="text-xs text-emerald-400 font-mono font-bold">&lt; 5ms Latency</span>
+            </div>
+            
+            <h3 class="text-xl font-bold text-white tracking-tight group-hover:text-indigo-400">
+              Hybrid Data Pipeline & S4HANA JDBC
+            </h3>
+            
+            <p class="mt-3 text-sm text-slate-400 leading-relaxed">
+              Owned end-to-end development of 2 flagship enterprise commercial products delivering 5 major releases over 3 years. Architected a 3-tier IP Whitelist security engine meeting rigorous compliance with less than 5ms latency overhead across all APIs.
+            </p>
+
+            <div class="mt-4 flex flex-wrap gap-1.5">
+              <span class="px-2 py-0.5 text-[11px] font-mono rounded bg-slate-800 text-blue-300">Java</span>
+              <span class="px-2 py-0.5 text-[11px] font-mono rounded bg-slate-800 text-slate-300">JDBC Internal Drivers</span>
+              <span class="px-2 py-0.5 text-[11px] font-mono rounded bg-slate-800 text-slate-300">Multi-Tenancy</span>
+              <span class="px-2 py-0.5 text-[11px] font-mono rounded bg-slate-800 text-slate-300">SAP S4HANA</span>
+            </div>
+          </div>
+
+          <div class="mt-6 pt-4 border-t border-slate-800/80 flex items-center justify-between">
+            <button class="open-deep-dive text-xs font-semibold text-indigo-400 hover:text-indigo-300 flex items-center space-x-1" data-project="progresshdp">
+              <span>Deep Dive Architecture</span>
+              <span>→</span>
+            </button>
+            <span class="text-xs text-slate-500 font-mono">Progress Software</span>
+          </div>
+        </div>
+
+        <!-- Project 8: Bank Statement Processor -->
+        <div class="project-card glass-panel rounded-2xl p-6 flex flex-col justify-between" data-category="fintech java">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="px-2.5 py-1 text-[11px] font-mono rounded-md bg-teal-500/10 text-teal-400 border border-teal-500/20 font-semibold">
+                FinTech & Extraction
+              </span>
+              <span class="text-xs text-slate-400 font-mono">Data Pipeline</span>
+            </div>
+            
+            <h3 class="text-xl font-bold text-white tracking-tight group-hover:text-indigo-400">
+              Bank Statement Table Extractor
+            </h3>
+            
+            <p class="mt-3 text-sm text-slate-400 leading-relaxed">
+              Fault-tolerant financial document extraction pipeline in Java and Spring Boot. Extracts multi-column debit transactions from PDFs and ASCII tables, performs checksum verification, normalizes date and currency data, and exports structured CSVs.
+            </p>
+
+            <div class="mt-4 flex flex-wrap gap-1.5">
+              <span class="px-2 py-0.5 text-[11px] font-mono rounded bg-slate-800 text-teal-300">Java 17</span>
+              <span class="px-2 py-0.5 text-[11px] font-mono rounded bg-slate-800 text-slate-300">Spring Boot</span>
+              <span class="px-2 py-0.5 text-[11px] font-mono rounded bg-slate-800 text-slate-300">Tabula PDF</span>
+              <span class="px-2 py-0.5 text-[11px] font-mono rounded bg-slate-800 text-slate-300">ASCII Parsing</span>
+            </div>
+          </div>
+
+          <div class="mt-6 pt-4 border-t border-slate-800/80 flex items-center justify-between">
+            <button class="open-deep-dive text-xs font-semibold text-indigo-400 hover:text-indigo-300 flex items-center space-x-1" data-project="bankprocessor">
+              <span>Deep Dive Architecture</span>
+              <span>→</span>
+            </button>
+            <a href="https://github.com/pkagitha-coder" target="_blank" class="text-xs font-mono text-slate-400 hover:text-white flex items-center space-x-1">
+              <span>GitHub</span>
+              <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 9: Spring Cloud Distributed Architecture -->
+        <div class="project-card glass-panel rounded-2xl p-6 flex flex-col justify-between" data-category="java">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="px-2.5 py-1 text-[11px] font-mono rounded-md bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 font-semibold">
+                Spring Cloud & Mesh
+              </span>
+              <span class="text-xs text-slate-400 font-mono">Distributed System</span>
+            </div>
+            
+            <h3 class="text-xl font-bold text-white tracking-tight group-hover:text-indigo-400">
+              Resilient Microservices Blueprint
+            </h3>
+            
+            <p class="mt-3 text-sm text-slate-400 leading-relaxed">
+              Cloud-native microservices architecture showcasing Spring Cloud service discovery (Eureka), centralized dynamic configuration, API Gateway routing, Resilience4j circuit breakers, and distributed request tracing.
+            </p>
+
+            <div class="mt-4 flex flex-wrap gap-1.5">
+              <span class="px-2 py-0.5 text-[11px] font-mono rounded bg-slate-800 text-indigo-300">Java</span>
+              <span class="px-2 py-0.5 text-[11px] font-mono rounded bg-slate-800 text-slate-300">Spring Cloud</span>
+              <span class="px-2 py-0.5 text-[11px] font-mono rounded bg-slate-800 text-slate-300">Eureka</span>
+              <span class="px-2 py-0.5 text-[11px] font-mono rounded bg-slate-800 text-slate-300">Resilience4j</span>
+              <span class="px-2 py-0.5 text-[11px] font-mono rounded bg-slate-800 text-slate-300">Docker</span>
+            </div>
+          </div>
+
+          <div class="mt-6 pt-4 border-t border-slate-800/80 flex items-center justify-between">
+            <button class="open-deep-dive text-xs font-semibold text-indigo-400 hover:text-indigo-300 flex items-center space-x-1" data-project="springcloudmicro">
+              <span>Deep Dive Architecture</span>
+              <span>→</span>
+            </button>
+            <a href="https://github.com/pkagitha-coder/SpringCloud" target="_blank" class="text-xs font-mono text-slate-400 hover:text-white flex items-center space-x-1">
+              <span>GitHub</span>
+              <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Career Experience Timeline Section -->
+  <section id="experience" class="py-16 sm:py-24 border-t border-slate-800/80 bg-slate-950/20">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <div class="inline-flex items-center space-x-2 text-indigo-400 text-xs font-mono tracking-widest uppercase mb-2">
+          <span>// CAREER JOURNEY</span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+          Enterprise Leadership & Impact
+        </h2>
+        <p class="mt-2 text-slate-400 text-sm sm:text-base">
+          Proven track record leading engineering squads, delivering mission-critical platforms, and mentoring engineers.
+        </p>
+      </div>
+
+      <!-- Vertical Timeline -->
+      <div class="relative space-y-12 pl-6 sm:pl-0">
+        
+        <!-- Center Line for Desktop -->
+        <div class="hidden sm:block absolute left-1/2 top-4 bottom-4 -translate-x-1/2 w-0.5 bg-gradient-to-b from-indigo-500 via-emerald-400 to-cyan-500"></div>
+
+        <!-- Experience 1: Apple -->
+        <div class="relative sm:grid sm:grid-cols-2 sm:gap-8 items-start">
+          <!-- Marker dot -->
+          <div class="absolute -left-6 sm:left-1/2 -translate-x-1/2 top-1.5 w-5 h-5 rounded-full border-4 border-slate-900 bg-indigo-500 shadow-md shadow-indigo-500/50"></div>
+          
+          <div class="sm:text-right sm:pr-8">
+            <span class="inline-block px-3 py-1 rounded-full text-xs font-mono font-semibold bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 mb-1">
+              Nov 2020 – Jul 2026
+            </span>
+            <h3 class="text-xl font-bold text-white">Apple</h3>
+            <p class="text-sm font-semibold text-emerald-400">Senior Software Engineer</p>
+            <p class="text-xs text-slate-400 font-mono mt-0.5">Hyderabad, India / Cupertino</p>
+          </div>
+
+          <div class="mt-3 sm:mt-0 sm:pl-8">
+            <div class="glass-panel p-5 rounded-2xl space-y-3">
+              <ul class="space-y-2 text-xs sm:text-sm text-slate-300">
+                <li class="flex items-start space-x-2">
+                  <span class="text-indigo-400 font-bold">▹</span>
+                  <span><strong>Cross-Functional Leadership:</strong> Led 5+ high-priority cross-functional initiatives with teams of 3-5 engineers, delivering resilient platforms powering critical operations.</span>
+                </li>
+                <li class="flex items-start space-x-2">
+                  <span class="text-indigo-400 font-bold">▹</span>
+                  <span><strong>Framework-First Impact:</strong> Architected a reusable framework for Planning Applications that <strong class="text-emerald-400">reduced development time by 40%</strong>, adopted across multiple production business domains.</span>
+                </li>
+                <li class="flex items-start space-x-2">
+                  <span class="text-indigo-400 font-bold">▹</span>
+                  <span><strong>Concurrency Tuning:</strong> Partitioned POR workflows by GEO and tuned JVM concurrency to unblock strict SLAs for high-volume APEX microservices.</span>
+                </li>
+                <li class="flex items-start space-x-2">
+                  <span class="text-indigo-400 font-bold">▹</span>
+                  <span><strong>AI Semantic Search:</strong> Built semantic search service using <strong>Qdrant vector DB</strong> and cosine similarity to eliminate QA test case duplication.</span>
+                </li>
+                <li class="flex items-start space-x-2">
+                  <span class="text-indigo-400 font-bold">▹</span>
+                  <span><strong>Mentorship:</strong> Mentored junior developers into independently owning and shipping core features.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience 2: Progress Software -->
+        <div class="relative sm:grid sm:grid-cols-2 sm:gap-8 items-start">
+          <!-- Marker dot -->
+          <div class="absolute -left-6 sm:left-1/2 -translate-x-1/2 top-1.5 w-5 h-5 rounded-full border-4 border-slate-900 bg-emerald-500 shadow-md shadow-emerald-500/50"></div>
+          
+          <div class="sm:order-2 sm:text-left sm:pl-8">
+            <span class="inline-block px-3 py-1 rounded-full text-xs font-mono font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 mb-1">
+              Sept 2013 – Sept 2020
+            </span>
+            <h3 class="text-xl font-bold text-white">Progress Software</h3>
+            <p class="text-sm font-semibold text-indigo-400">Principal Engineer II</p>
+            <p class="text-xs text-slate-400 font-mono mt-0.5">Hyderabad, India / Bedford, MA</p>
+          </div>
+
+          <div class="mt-3 sm:mt-0 sm:order-1 sm:pr-8">
+            <div class="glass-panel p-5 rounded-2xl space-y-3">
+              <ul class="space-y-2 text-xs sm:text-sm text-slate-300">
+                <li class="flex items-start space-x-2">
+                  <span class="text-emerald-400 font-bold">▹</span>
+                  <span><strong>Commercial Product Ownership:</strong> Led team of 4 developers on Hybrid Data Pipeline (HDP), delivering <strong class="text-white">5 major releases over 3 years</strong>. Owned end-to-end development of HDP and S4HANA JDBC Driver.</span>
+                </li>
+                <li class="flex items-start space-x-2">
+                  <span class="text-emerald-400 font-bold">▹</span>
+                  <span><strong>Sub-5ms Security Architecture:</strong> Architected 3-tier IP Whitelist feature (system, tenant, user levels) with <strong class="text-emerald-400">&lt;5ms latency overhead</strong> across all API calls.</span>
+                </li>
+                <li class="flex items-start space-x-2">
+                  <span class="text-emerald-400 font-bold">▹</span>
+                  <span><strong>Legacy Modernization:</strong> Architected External DB and OpenEdge support for Rollbase, enabling rapid app creation on legacy enterprise data.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience 3: Cognizant Technology Solutions -->
+        <div class="relative sm:grid sm:grid-cols-2 sm:gap-8 items-start">
+          <!-- Marker dot -->
+          <div class="absolute -left-6 sm:left-1/2 -translate-x-1/2 top-1.5 w-5 h-5 rounded-full border-4 border-slate-900 bg-cyan-500 shadow-md shadow-cyan-500/50"></div>
+          
+          <div class="sm:text-right sm:pr-8">
+            <span class="inline-block px-3 py-1 rounded-full text-xs font-mono font-semibold bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 mb-1">
+              May 2010 – Sept 2013
+            </span>
+            <h3 class="text-xl font-bold text-white">Cognizant Technology Solutions</h3>
+            <p class="text-sm font-semibold text-emerald-400">Senior Associate</p>
+            <p class="text-xs text-slate-400 font-mono mt-0.5">Hyderabad, India</p>
+          </div>
+
+          <div class="mt-3 sm:mt-0 sm:pl-8">
+            <div class="glass-panel p-5 rounded-2xl space-y-3">
+              <ul class="space-y-2 text-xs sm:text-sm text-slate-300">
+                <li class="flex items-start space-x-2">
+                  <span class="text-cyan-400 font-bold">▹</span>
+                  <span><strong>End-to-End UI Application:</strong> Sole developer of NCCM (Network Configuration and Change Management) UI, building 25+ screens across 5+ modules serving network engineers.</span>
+                </li>
+                <li class="flex items-start space-x-2">
+                  <span class="text-cyan-400 font-bold">▹</span>
+                  <span><strong>RBAC Framework:</strong> Designed and implemented role-based authorization from scratch with 4 roles and granular read/write permissions.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience 4: Amber Road -->
+        <div class="relative sm:grid sm:grid-cols-2 sm:gap-8 items-start">
+          <!-- Marker dot -->
+          <div class="absolute -left-6 sm:left-1/2 -translate-x-1/2 top-1.5 w-5 h-5 rounded-full border-4 border-slate-900 bg-purple-500 shadow-md shadow-purple-500/50"></div>
+          
+          <div class="sm:order-2 sm:text-left sm:pl-8">
+            <span class="inline-block px-3 py-1 rounded-full text-xs font-mono font-semibold bg-purple-500/10 text-purple-400 border border-purple-500/20 mb-1">
+              Jun 2009 – May 2010
+            </span>
+            <h3 class="text-xl font-bold text-white">Amber Road</h3>
+            <p class="text-sm font-semibold text-indigo-400">Software Engineer</p>
+            <p class="text-xs text-slate-400 font-mono mt-0.5">Hyderabad, India</p>
+          </div>
+
+          <div class="mt-3 sm:mt-0 sm:order-1 sm:pr-8">
+            <div class="glass-panel p-5 rounded-2xl space-y-3">
+              <ul class="space-y-2 text-xs sm:text-sm text-slate-300">
+                <li class="flex items-start space-x-2">
+                  <span class="text-purple-400 font-bold">▹</span>
+                  <span><strong>Enterprise Data Export:</strong> Engineered high-volume CSV export functionality for Purchase Orders, Invoices, and Global Shipments, significantly streamlining supply chain operations.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Technical Skills Matrix Section -->
+  <section id="skills" class="py-16 sm:py-24 border-t border-slate-800/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <div class="inline-flex items-center space-x-2 text-indigo-400 text-xs font-mono tracking-widest uppercase mb-2">
+          <span>// TECHNICAL ARSENAL</span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+          Comprehensive Skills & Stack
+        </h2>
+        <p class="mt-2 text-slate-400 text-sm sm:text-base">
+          Mastered across 15+ years of production system design and continuous learning.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- Category 1: Languages & Backend -->
+        <div class="glass-panel p-6 rounded-2xl space-y-4">
+          <div class="flex items-center space-x-3">
+            <div class="w-10 h-10 rounded-xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center font-mono font-bold text-sm">
+              &lt;/&gt;
+            </div>
+            <div>
+              <h3 class="text-base font-bold text-white">Languages & Frameworks</h3>
+              <p class="text-xs text-slate-400">High-throughput microservices</p>
+            </div>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-2.5 py-1 text-xs rounded-lg bg-slate-800 text-indigo-300 border border-slate-700 font-mono">Java 17 / 21</span>
+            <span class="px-2.5 py-1 text-xs rounded-lg bg-slate-800 text-indigo-300 border border-slate-700 font-mono">Spring Boot 3</span>
+            <span class="px-2.5 py-1 text-xs rounded-lg bg-slate-800 text-indigo-300 border border-slate-700 font-mono">Python 3.13</span>
+            <span class="px-2.5 py-1 text-xs rounded-lg bg-slate-800 text-slate-300 border border-slate-700 font-mono">FastAPI</span>
+            <span class="px-2.5 py-1 text-xs rounded-lg bg-slate-800 text-slate-300 border border-slate-700 font-mono">Node.js</span>
+            <span class="px-2.5 py-1 text-xs rounded-lg bg-slate-800 text-slate-300 border border-slate-700 font-mono">SQL / JDBC</span>
+            <span class="px-2.5 py-1 text-xs rounded-lg bg-slate-800 text-slate-300 border border-slate-700 font-mono">JSP / EJB / Struts</span>
+          </div>
+        </div>
+
+        <!-- Category 2: AI, LLMs & Vectors -->
+        <div class="glass-panel p-6 rounded-2xl space-y-4">
+          <div class="flex items-center space-x-3">
+            <div class="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center font-mono font-bold text-sm">
+              AI
+            </div>
+            <div>
+              <h3 class="text-base font-bold text-white">AI, LLMs & Vectors</h3>
+              <p class="text-xs text-slate-400">Autonomous pipelines & RAG</p>
+            </div>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-2.5 py-1 text-xs rounded-lg bg-slate-800 text-emerald-300 border border-slate-700 font-mono">Local LLMs (Ollama)</span>
+            <span class="px-2.5 py-1 text-xs rounded-lg bg-slate-800 text-emerald-300 border border-slate-700 font-mono">Qwen 2.5 Coder</span>
+            <span class="px-2.5 py-1 text-xs rounded-lg bg-slate-800 text-emerald-300 border border-slate-700 font-mono">Spring AI</span>
+            <span class="px-2.5 py-1 text-xs rounded-lg bg-slate-800 text-emerald-300 border border-slate-700 font-mono">Qdrant Vector DB</span>
+            <span class="px-2.5 py-1 text-xs rounded-lg bg-slate-800 text-slate-300 border border-slate-700 font-mono">pgvector</span>
+            <span class="px-2.5 py-1 text-xs rounded-lg bg-slate-800 text-slate-300 border border-slate-700 font-mono">MCP Protocol</span>
+            <span class="px-2.5 py-1 text-xs rounded-lg bg-slate-800 text-slate-300 border border-slate-700 font-mono">LangChain</span>
+            <span class="px-2.5 py-1 text-xs rounded-lg bg-slate-800 text-slate-300 border border-slate-700 font-mono">Cosine Similarity</span>
+          </div>
+        </div>
+
+        <!-- Category 3: Architecture & Systems -->
+        <div class="glass-panel p-6 rounded-2xl space-y-4">
+          <div class="flex items-center space-x-3">
+            <div class="w-10 h-10 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center font-mono font-bold text-sm">
+              SYS
+            </div>
+            <div>
+              <h3 class="text-base font-bold text-white">Architecture & Design</h3>
+              <p class="text-xs text-slate-400">Zero overhead & high scale</p>
+            </div>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-2.5 py-1 text-xs rounded-lg bg-slate-800 text-cyan-300 border border-slate-700 font-mono">Distributed Systems</span>
+            <span class="px-2.5 py-1 text-xs rounded-lg bg-slate-800 text-cyan-300 border border-slate-700 font-mono">Microservices</span>
+            <span class="px-2.5 py-1 text-xs rounded-lg bg-slate-800 text-cyan-300 border border-slate-700 font-mono">Concurrency Tuning</span>
+            <span class="px-2.5 py-1 text-xs rounded-lg bg-slate-800 text-slate-300 border border-slate-700 font-mono">GEO-Partitioning</span>
+            <span class="px-2.5 py-1 text-xs rounded-lg bg-slate-800 text-slate-300 border border-slate-700 font-mono">Multi-Tenancy</span>
+            <span class="px-2.5 py-1 text-xs rounded-lg bg-slate-800 text-slate-300 border border-slate-700 font-mono">Domain-Driven (DDD)</span>
+            <span class="px-2.5 py-1 text-xs rounded-lg bg-slate-800 text-slate-300 border border-slate-700 font-mono">ANTLR Compilers</span>
+          </div>
+        </div>
+
+        <!-- Category 4: Databases & Storage -->
+        <div class="glass-panel p-6 rounded-2xl space-y-4">
+          <div class="flex items-center space-x-3">
+            <div class="w-10 h-10 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center font-mono font-bold text-sm">
+              DB
+            </div>
+            <div>
+              <h3 class="text-base font-bold text-white">Databases & Storage</h3>
+              <p class="text-xs text-slate-400">Relational, document & vector</p>
+            </div>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-2.5 py-1 text-xs rounded-lg bg-slate-800 text-amber-300 border border-slate-700 font-mono">PostgreSQL</span>
+            <span class="px-2.5 py-1 text-xs rounded-lg bg-slate-800 text-amber-300 border border-slate-700 font-mono">SingleStore DB</span>
+            <span class="px-2.5 py-1 text-xs rounded-lg bg-slate-800 text-slate-300 border border-slate-700 font-mono">MySQL</span>
+            <span class="px-2.5 py-1 text-xs rounded-lg bg-slate-800 text-slate-300 border border-slate-700 font-mono">MongoDB</span>
+            <span class="px-2.5 py-1 text-xs rounded-lg bg-slate-800 text-slate-300 border border-slate-700 font-mono">Redis</span>
+            <span class="px-2.5 py-1 text-xs rounded-lg bg-slate-800 text-slate-300 border border-slate-700 font-mono">Neo4j</span>
+          </div>
+        </div>
+
+        <!-- Category 5: DevOps & Cloud -->
+        <div class="glass-panel p-6 rounded-2xl space-y-4">
+          <div class="flex items-center space-x-3">
+            <div class="w-10 h-10 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center font-mono font-bold text-sm">
+              OPS
+            </div>
+            <div>
+              <h3 class="text-base font-bold text-white">DevOps & Cloud</h3>
+              <p class="text-xs text-slate-400">CI/CD, containers & tooling</p>
+            </div>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-2.5 py-1 text-xs rounded-lg bg-slate-800 text-purple-300 border border-slate-700 font-mono">Docker</span>
+            <span class="px-2.5 py-1 text-xs rounded-lg bg-slate-800 text-purple-300 border border-slate-700 font-mono">Kubernetes</span>
+            <span class="px-2.5 py-1 text-xs rounded-lg bg-slate-800 text-slate-300 border border-slate-700 font-mono">AWS</span>
+            <span class="px-2.5 py-1 text-xs rounded-lg bg-slate-800 text-slate-300 border border-slate-700 font-mono">CI/CD Pipelines</span>
+            <span class="px-2.5 py-1 text-xs rounded-lg bg-slate-800 text-slate-300 border border-slate-700 font-mono">Sonar Quality Gates</span>
+            <span class="px-2.5 py-1 text-xs rounded-lg bg-slate-800 text-slate-300 border border-slate-700 font-mono">Claude Code / Aider</span>
+          </div>
+        </div>
+
+        <!-- Category 6: UI & Web Development -->
+        <div class="glass-panel p-6 rounded-2xl space-y-4">
+          <div class="flex items-center space-x-3">
+            <div class="w-10 h-10 rounded-xl bg-rose-500/10 text-rose-400 flex items-center justify-center font-mono font-bold text-sm">
+              UI
+            </div>
+            <div>
+              <h3 class="text-base font-bold text-white">Web & UI Development</h3>
+              <p class="text-xs text-slate-400">Responsive dashboards & clients</p>
+            </div>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-2.5 py-1 text-xs rounded-lg bg-slate-800 text-rose-300 border border-slate-700 font-mono">React</span>
+            <span class="px-2.5 py-1 text-xs rounded-lg bg-slate-800 text-rose-300 border border-slate-700 font-mono">JavaScript (ES6+)</span>
+            <span class="px-2.5 py-1 text-xs rounded-lg bg-slate-800 text-slate-300 border border-slate-700 font-mono">HTML5 / CSS3</span>
+            <span class="px-2.5 py-1 text-xs rounded-lg bg-slate-800 text-slate-300 border border-slate-700 font-mono">Tailwind CSS</span>
+            <span class="px-2.5 py-1 text-xs rounded-lg bg-slate-800 text-slate-300 border border-slate-700 font-mono">Java Swing</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Education & Degree -->
+      <div class="mt-12 glass-panel p-6 rounded-2xl flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div class="flex items-center space-x-4">
+          <div class="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center font-mono text-xl font-bold">
+            🎓
+          </div>
+          <div>
+            <h4 class="text-base font-bold text-white">B. Tech Computer Science & Engineering</h4>
+            <p class="text-xs text-slate-400">JNTU University • Diploma in Computer Engineering (S.B.T.E.T)</p>
+          </div>
+        </div>
+        <div class="text-xs font-mono text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-3 py-1.5 rounded-lg">
+          Strong CS Core & Algorithmic Foundations
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- GitHub Activity & Open Source Banner -->
+  <section class="py-12 border-t border-slate-800/80 bg-slate-950/40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="glass-panel p-8 rounded-3xl border border-indigo-500/20 relative overflow-hidden">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-8 space-y-3">
+            <div class="inline-flex items-center space-x-2 text-xs font-mono text-indigo-400 font-semibold">
+              <span>● GITHUB PROFILE:</span>
+              <a href="https://github.com/pkagitha-coder" target="_blank" class="underline hover:text-white">@pkagitha-coder</a>
+            </div>
+            <h3 class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+              19+ Public Repositories & Open Source Contributions
+            </h3>
+            <p class="text-sm text-slate-400 leading-relaxed max-w-2xl">
+              Exploring agentic workflows, domain-driven design, algorithms (LeetCode/HackerRank practice), Spring Cloud microservices, and local AI toolchains.
+            </p>
+          </div>
+
+          <div class="lg:col-span-4 flex flex-col sm:flex-row lg:flex-col gap-3 justify-center">
+            <a href="https://github.com/pkagitha-coder" target="_blank" rel="noopener noreferrer" class="px-5 py-3 rounded-xl bg-white hover:bg-slate-100 text-slate-900 font-semibold text-xs text-center transition-all flex items-center justify-center space-x-2 shadow-lg">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              <span>Visit GitHub @pkagitha-coder</span>
+            </a>
+            
+            <a href="https://linkedin.com/in/pradeep-kagithalagudem" target="_blank" rel="noopener noreferrer" class="px-5 py-3 rounded-xl border border-slate-700 bg-slate-800 hover:bg-slate-700 text-white font-semibold text-xs text-center transition-all flex items-center justify-center space-x-2">
+              <span>Connect on LinkedIn</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Connect Section -->
+  <section id="contact" class="py-16 sm:py-24 border-t border-slate-800/80">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <div class="inline-flex items-center space-x-2 text-emerald-400 text-xs font-mono tracking-widest uppercase mb-2">
+          <span>// GET IN TOUCH</span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+          Let's Build Exceptional Systems Together
+        </h2>
+        <p class="mt-2 text-slate-400 text-sm sm:text-base">
+          Available for Enterprise Architecture, Principal / Staff Engineering roles, and AI Engineering consulting.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        
+        <!-- Contact Card: Direct Channels -->
+        <div class="glass-panel p-6 sm:p-8 rounded-3xl space-y-6">
+          <h3 class="text-lg font-bold text-white flex items-center space-x-2">
+            <span>Direct Channels</span>
+          </h3>
+
+          <!-- Email -->
+          <div class="flex items-center justify-between p-3.5 rounded-xl bg-slate-800/60 border border-slate-700/60">
+            <div class="flex items-center space-x-3 truncate">
+              <span class="text-indigo-400">✉️</span>
+              <div class="truncate">
+                <div class="text-[11px] font-mono text-slate-400">EMAIL</div>
+                <a href="mailto:pradeepk10@gmail.com" class="text-sm font-semibold text-white hover:text-indigo-300 truncate">
+                  pradeepk10@gmail.com
+                </a>
+              </div>
+            </div>
+            <button class="copy-trigger px-2.5 py-1 text-xs font-mono rounded bg-slate-700 text-slate-300 hover:text-white hover:bg-slate-600 transition-colors ml-2" data-copy="pradeepk10@gmail.com" title="Copy Email">
+              Copy
+            </button>
+          </div>
+
+          <!-- Phone -->
+          <div class="flex items-center justify-between p-3.5 rounded-xl bg-slate-800/60 border border-slate-700/60">
+            <div class="flex items-center space-x-3">
+              <span class="text-emerald-400">📞</span>
+              <div>
+                <div class="text-[11px] font-mono text-slate-400">PHONE / WHATSAPP</div>
+                <a href="tel:+919701838793" class="text-sm font-semibold text-white hover:text-emerald-300">
+                  +91-9701838793
+                </a>
+              </div>
+            </div>
+            <button class="copy-trigger px-2.5 py-1 text-xs font-mono rounded bg-slate-700 text-slate-300 hover:text-white hover:bg-slate-600 transition-colors ml-2" data-copy="+91-9701838793" title="Copy Phone">
+              Copy
+            </button>
+          </div>
+
+          <!-- Location -->
+          <div class="flex items-center space-x-3 p-3.5 rounded-xl bg-slate-800/60 border border-slate-700/60">
+            <span class="text-cyan-400">📍</span>
+            <div>
+              <div class="text-[11px] font-mono text-slate-400">LOCATION & TIMEZONE</div>
+              <div class="text-sm font-semibold text-white">Hyderabad, India (IST / UTC+5:30)</div>
+              <div id="ist-clock" class="text-xs font-mono text-emerald-400 mt-0.5">--:--:-- IST</div>
+            </div>
+          </div>
+
+          <!-- Professional Profiles -->
+          <div class="pt-2 flex items-center space-x-3">
+            <a href="https://linkedin.com/in/pradeep-kagithalagudem" target="_blank" class="flex-1 py-2.5 px-4 rounded-xl border border-slate-700 bg-slate-800/80 hover:bg-slate-700 text-xs font-semibold text-white text-center transition-colors">
+              LinkedIn Profile ↗
+            </a>
+            <a href="https://github.com/pkagitha-coder" target="_blank" class="flex-1 py-2.5 px-4 rounded-xl border border-slate-700 bg-slate-800/80 hover:bg-slate-700 text-xs font-semibold text-white text-center transition-colors">
+              GitHub Profile ↗
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Quick Message / Mailto Card -->
+        <div class="glass-panel p-6 sm:p-8 rounded-3xl flex flex-col justify-between space-y-6">
+          <div>
+            <h3 class="text-lg font-bold text-white">Start a Conversation</h3>
+            <p class="text-xs text-slate-400 mt-1">
+              Looking for a seasoned Enterprise Architect to lead high-throughput systems, scale microservices, or build AI workflows? Drop me an email directly.
+            </p>
+
+            <div class="mt-6 space-y-4">
+              <div>
+                <label class="block text-xs font-mono text-slate-300 mb-1">Subject</label>
+                <input type="text" id="quick-subject" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white text-xs focus:outline-none focus:border-indigo-500" placeholder="e.g. Technical Leadership / Architecture Opportunity">
+              </div>
+
+              <div>
+                <label class="block text-xs font-mono text-slate-300 mb-1">Message Note</label>
+                <textarea id="quick-body" rows="3" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white text-xs focus:outline-none focus:border-indigo-500 resize-none" placeholder="Hi Pradeep, I came across your portfolio and would like to connect regarding..."></textarea>
+              </div>
+            </div>
+          </div>
+
+          <button id="send-mail-btn" class="w-full py-3 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-xs shadow-lg shadow-indigo-600/30 transition-all">
+            Send Email via Client →
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-8 border-t border-slate-800 text-xs text-slate-500">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div>
+        © 2026 <span class="text-slate-300 font-semibold">Pradeep Kagithalagudem</span>. Engineered for extreme performance, clean architecture, and elegance.
+      </div>
+      <div class="flex items-center space-x-6 font-mono text-[11px]">
+        <a href="#hero" class="hover:text-slate-300 transition-colors">↑ Back to Top</a>
+        <a href="https://github.com/pkagitha-coder" target="_blank" class="hover:text-slate-300 transition-colors">GitHub</a>
+        <a href="https://linkedin.com/in/pradeep-kagithalagudem" target="_blank" class="hover:text-slate-300 transition-colors">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Project Architecture Deep Dive Modal -->
+  <div id="project-modal" class="modal-overlay fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-md">
+    <div class="modal-card w-full max-w-2xl bg-slate-900 border border-slate-700 rounded-3xl p-6 sm:p-8 shadow-2xl space-y-6 max-h-[90vh] overflow-y-auto">
+      
+      <div class="flex items-start justify-between border-b border-slate-800 pb-4">
+        <div>
+          <span id="modal-badge" class="px-2.5 py-1 text-[11px] font-mono rounded-md bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 font-semibold">
+            System Architecture
+          </span>
+          <h3 id="modal-title" class="text-xl sm:text-2xl font-bold text-white mt-2">
+            Project Architecture
+          </h3>
+        </div>
+        <button id="modal-close-btn" class="p-2 rounded-xl text-slate-400 hover:text-white hover:bg-slate-800 transition-colors">
+          ✕
+        </button>
+      </div>
+
+      <!-- Overview -->
+      <div>
+        <h4 class="text-xs font-mono text-indigo-400 uppercase tracking-wider mb-1">Overview & Objective</h4>
+        <p id="modal-overview" class="text-sm text-slate-300 leading-relaxed"></p>
+      </div>
+
+      <!-- Architectural Highlights -->
+      <div>
+        <h4 class="text-xs font-mono text-emerald-400 uppercase tracking-wider mb-2">Architectural Highlights</h4>
+        <ul id="modal-architecture" class="space-y-2"></ul>
+      </div>
+
+      <!-- Tech Stack -->
+      <div>
+        <h4 class="text-xs font-mono text-cyan-400 uppercase tracking-wider mb-2">Technologies & Protocols</h4>
+        <div id="modal-techstack" class="flex flex-wrap gap-2"></div>
+      </div>
+
+      <!-- Key Metrics -->
+      <div class="p-4 rounded-xl bg-slate-800/60 border border-slate-700/60">
+        <h4 class="text-[11px] font-mono text-slate-400 uppercase tracking-wider mb-1">Key Impact Metrics</h4>
+        <div id="modal-metrics" class="text-xs font-mono text-emerald-300"></div>
+      </div>
+
+      <div class="flex items-center justify-between pt-2">
+        <a id="modal-github-link" href="#" target="_blank" class="px-4 py-2 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-medium text-xs flex items-center space-x-2 transition-colors">
+          <span>View on GitHub ↗</span>
+        </a>
+        <button onclick="document.getElementById('project-modal').classList.remove('active'); document.body.style.overflow = '';" class="px-4 py-2 rounded-xl border border-slate-700 text-xs text-slate-300 hover:text-white transition-colors">
+          Close
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-msg" class="toast-msg">
+    <div class="px-4 py-2.5 rounded-xl bg-slate-900 border border-indigo-500/40 text-white text-xs font-mono shadow-2xl flex items-center space-x-2">
+      <span class="text-emerald-400">✓</span>
+      <span id="toast-text">Copied to clipboard</span>
+    </div>
+  </div>
+
+  <!-- Quick Mailto Click Handler -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const sendBtn = document.getElementById('send-mail-btn');
+      if (sendBtn) {
+        sendBtn.addEventListener('click', () => {
+          const sub = encodeURIComponent(document.getElementById('quick-subject').value || 'Connecting regarding Architecture / AI Roles');
+          const body = encodeURIComponent(document.getElementById('quick-body').value || 'Hi Pradeep,\n\nI reviewed your portfolio and would like to discuss...');
+          window.location.href = `mailto:pradeepk10@gmail.com?subject=${sub}&body=${body}`;
+        });
+      }
+    });
+  </script>
+
+  <!-- Interactive Script -->
+  <script src="script.js"></script>
+</body>
+</html>
